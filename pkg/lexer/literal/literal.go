@@ -49,6 +49,7 @@ var (
 	GRAPHQLTYPE        = []byte("graphqlType")
 	INTERFACE          = []byte("interface")
 	INPUT              = []byte("input")
+	CODE               = []byte("code")
 	WASMFILE           = []byte("wasmFile")
 	INCLUDE            = []byte("include")
 	IF                 = []byte("if")
