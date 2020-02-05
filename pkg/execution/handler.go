@@ -192,9 +192,6 @@ func (h *Handler) resolverDefinitions(report *operationreport.Report) ResolverDe
 				return NewMQTTDataSourcePlanner(baseDataSourcePlanner)
 			},
 			func() DataSourcePlanner {
-				return NewWasmDataSourcePlanner(baseDataSourcePlanner)
-			},
-			func() DataSourcePlanner {
 				return NewPipelineDataSourcePlanner(baseDataSourcePlanner)
 			},
 		},
